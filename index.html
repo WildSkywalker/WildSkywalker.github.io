@@ -1,6 +1,38 @@
 <!doctype html>
 <!-- Generated from the authoritative CV. Edit the CV in Overleaf, not this file. -->
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light"><script>// Embedded in the generated head: apply the saved choice before styles load.
+(() => {
+  const key = 'yi-gu-theme';
+  const root = document.documentElement;
+  let theme = 'dark';
+  try {
+    const saved = localStorage.getItem(key);
+    if (saved === 'light' || saved === 'dark') theme = saved;
+  } catch {
+    // Private browsing or disabled storage must not prevent switching themes.
+  }
+  root.dataset.theme = theme;
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const button = document.querySelector('.theme-toggle');
+    if (!button) return;
+    const label = button.querySelector('.theme-label');
+    const updateButton = () => {
+      const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      label.textContent = next === 'light' ? 'Light mode' : 'Dark mode';
+      button.setAttribute('aria-label', `Switch to ${next} mode`);
+    };
+    updateButton();
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      updateButton();
+      try { localStorage.setItem(key, root.dataset.theme); } catch {}
+    });
+  });
+})();
+</script>
 <title>Yi Gu | Research Data Scientist</title><meta name="description" content="Yi Gu, Research Data Scientist at Google. Research, publications, and curriculum vitae.">
 <meta name="cv-revision" content="e8c512a7ce0fde50f36748e6bd7774862f1f30a7"><link rel="canonical" href="https://wildskywalker.github.io/">
 <meta property="og:title" content="Yi Gu"><meta property="og:description" content="Yi Gu, Research Data Scientist at Google. Research, publications, and curriculum vitae."><meta property="og:type" content="website"><meta property="og:url" content="https://wildskywalker.github.io/"><meta property="og:image" content="https://wildskywalker.github.io/avatar.jpg">
@@ -8,6 +40,7 @@
 </head><body><a class="skip-link" href="#main">Skip to content</a><div class="wrapper">
 <header class="profile"><img class="portrait" src="avatar.jpg" alt="Yi Gu&#39;s violin" width="150" height="150"><h1>Yi Gu</h1><p class="position">Research Data Scientist<br><span class="affiliation">Google</span></p><a class="email" href="mailto:Yi.Gu@u.northwestern.edu">Yi.Gu@u.northwestern.edu</a>
 <nav class="profile-links" aria-label="Profile links"><a href="Yi_Gu_CV.pdf">CV <span class="filetype">PDF</span></a><a href="https://scholar.google.com/citations?user=dXHFcO0AAAAJ&amp;hl=en">Scholar</a><a href="https://github.com/WildSkywalker">GitHub</a></nav>
+<button class="theme-toggle" type="button" hidden aria-label="Switch to light mode"><svg class="theme-sun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="theme-moon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg><span class="theme-label">Light mode</span></button>
 <nav class="section-nav" aria-label="Page sections"><a href="#about">About</a><a href="#experience">Experience</a><a href="#publications">Publications</a><a href="#education">Education</a><a href="#service">Service</a></nav>
 </header><main id="main">
 <section id="about"><h2>About me</h2><p>I am a Research Data Scientist at Google. My research interests lie in probability theory and its connections to machine learning.</p><p>Outside research, I play the violin, which I have studied since the age of four.</p></section>
