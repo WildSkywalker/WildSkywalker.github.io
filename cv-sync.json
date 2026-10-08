@@ -2,8 +2,8 @@
   "schema": 1,
   "cv_commit": "e8c512a7ce0fde50f36748e6bd7774862f1f30a7",
   "source_sha256": "de43c4a7150111638ebc388722d4b20b22adf52d1618326353ca5f82c226a258",
-  "generator_sha256": "9bd07092e0b42ab197648293dec9949135d2de5c6c3647a488562a81af3ea7c1",
-  "html_sha256": "ec0bfc33c68da73a7241362ca1e8c551afea4e6feb2d06229dc141eec1a6a652",
+  "generator_sha256": "5fabdd0342cec725b8ec02dbc98cc43aa8ce00531028d373a10b3d7ac4a79e1e",
+  "html_sha256": "43ebe3cdecf9c05bcbca7114bb09ed93e4fae236e146fb790a5ec12d8d42afe5",
   "pdf_sha256": "b8b44163b5792335fffb23ec4893c3bb0f91a8320bb796850b657bb1267ca341",
   "publication_count": 6,
   "highlight_count": 4
