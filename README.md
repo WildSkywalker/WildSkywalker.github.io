@@ -2,7 +2,7 @@
 
 Static HTML adaptation of [Minimal Light](https://github.com/yaoyao-liu/minimal-light), served at https://wildskywalker.github.io/.
 
-The CV maintained in Overleaf is the authoritative source for the downloadable PDF and the homepage's publications, employment, education, and service. Generated files are `index.html`, `Yi_Gu_CV.pdf`, and `cv-sync.json`; do not edit them independently. The full CV contains detailed employment achievements and technical skills, while the homepage shows a concise selection of sections. The existing photo, personal note, research-interest sentence and profile links are website-specific content.
+The CV maintained in Overleaf is the authoritative source for the downloadable PDF and the homepage's publications, employment, education, and service. Generated files are `index.html`, `Yi_Gu_CV.pdf`, and `cv-sync.json`; do not edit them independently. Experience leads publications, with selected LLM-related achievements copied from the CV under their original roles. The full CV contains all employment achievements and technical skills. The existing photo, personal note, research-interest sentence and profile links are website-specific content.
 
 The local sync tooling lives alongside this checkout in `../site-tools/`. It pulls Overleaf, compiles the PDF with the existing LaTeX installation, validates and regenerates the page, then commits only the three generated files. It stops on local edits, conflicting Git history, compile failures, and unsupported CV structure. An app-managed recurring check runs on the owner's computer; it is not an Overleaf webhook or a GitHub-hosted credential integration.
 
