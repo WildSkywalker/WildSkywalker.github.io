@@ -1,10 +1,10 @@
 {
   "schema": 1,
-  "cv_commit": "e8c512a7ce0fde50f36748e6bd7774862f1f30a7",
-  "source_sha256": "de43c4a7150111638ebc388722d4b20b22adf52d1618326353ca5f82c226a258",
-  "generator_sha256": "5fabdd0342cec725b8ec02dbc98cc43aa8ce00531028d373a10b3d7ac4a79e1e",
-  "html_sha256": "43ebe3cdecf9c05bcbca7114bb09ed93e4fae236e146fb790a5ec12d8d42afe5",
-  "pdf_sha256": "b8b44163b5792335fffb23ec4893c3bb0f91a8320bb796850b657bb1267ca341",
+  "cv_commit": "8561581a2ac38189e240be08d4b1df19e1e9d9b9",
+  "source_sha256": "1566a9eaca23bd7f04991eb49a6629ef652b00807fe2e82936ac3da6388c2855",
+  "generator_sha256": "65c3d9909fd4f88bb88df69404ca626fe8ff09000b9269df8aa9ffddfd1eb3d4",
+  "html_sha256": "210b8c5564ba22d5218bcd379eb3943974a6dfa8244242ca337578d9ca9fbfb1",
+  "pdf_sha256": "8e922f146ce822f833e0608394421d65f58091f8b2e11c78a6181adb5cad47d9",
   "publication_count": 6,
-  "highlight_count": 4
+  "highlight_count": 6
 }
