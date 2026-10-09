@@ -56,7 +56,7 @@ strong { color:inherit; font-weight:600; }
 .thesis-label { font-style:italic; }
 .service-list { list-style:none; padding:0; margin:0; }
 .service-list li { margin-bottom:17px; font-size:16px; }
-.service-list strong { display:block; font-size:18px; color:var(--ink); }
+.service-list li > strong { display:block; font-size:18px; color:var(--ink); }
 .site-footer { position:static; float:none; width:auto; display:flex; justify-content:space-between; gap:16px; border-top:1px solid var(--border); padding-top:20px; font-size:13px; text-align:left; color:var(--muted); }
 .skip-link { position:absolute; left:16px; top:-80px; background:var(--surface); padding:10px; z-index:10; }
 .skip-link:focus { top:10px; }
